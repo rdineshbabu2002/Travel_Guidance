@@ -1,5 +1,5 @@
 import React from "react";
-import img  "./"
+// import img  "./"
 const Categories = () => {
   return (
     <div>
