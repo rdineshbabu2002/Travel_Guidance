@@ -1,17 +1,21 @@
 import React from "react";
-// import img  "./"
+import img from "./assests/Lotus.jpg";
+import "./Categories.scss";
 const Categories = () => {
   return (
-    <div>
+    <div id="cat">
       <div className="category">
-        <div className="head">Categories</div>
-        <p className="content">
-          Much destination here but don't be confuse! It's already grouped by
-          category.
-        </p>
+        <div className="cato">
+          <div className="head">Categories</div>
+          <p className="content">
+            Much destination here but don't be confuse! It's already grouped by
+            category.
+          </p>
+        </div>
+        <div>Arrow</div>
       </div>
       <div className="card">
-        <img className="img" src="./assests/Lotus.jpg" alt="img" />
+        <img className="img" src={img} alt="img" />
         <p>Beach</p>
       </div>
     </div>
