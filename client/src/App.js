@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.scss";
+import Categories from "./Categories";
+import Home from "./Home";
 
 const App = () => {
   return (
     <div id="app">
-      <h1 className="title">App</h1>
+      <Home />
+      <Categories />
     </div>
   );
 };
