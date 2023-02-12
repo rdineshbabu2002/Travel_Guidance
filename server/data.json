@@ -484,5 +484,189 @@
         "Longitude": 167.9948
       }
     ]
+  },
+  {
+    "Place Name": "Mahabalipuram",
+    "Description": "Mahabalipuram, also known as Mamallapuram, is a UNESCO World Heritage Site located on the Bay of Bengal in the Indian state of Tamil Nadu. The site is famous for its rock-cut temples and sculptures, which date back to the 7th and 8th centuries AD. Visitors to Mahabalipuram can see the famous Shore Temple, the Five Rathas, and the Arjuna's Penance relief, as well as a variety of other ancient structures and monuments. The site offers a unique opportunity to see ancient Indian architecture and art, and is a popular destination for tourists and history enthusiasts.",
+    "Ratings": 4.7,
+    "Category": "Temple",
+    "Location": "Tamil Nadu, India",
+    "Latitude": 12.6184,
+    "Longitude": 80.1841,
+    "Hotels near the Place": [
+      {
+        "Name": "The Leela Palace, Chennai",
+        "Distance to Place": "40.0 km",
+        "Latitude": 13.0336,
+        "Longitude": 80.2707
+      },
+      {
+        "Name": "Taj Fisherman's Cove Resort & Spa, Chennai",
+        "Distance to Place": "35.0 km",
+        "Latitude": 12.7865,
+        "Longitude": 80.2658
+      }
+    ]
+  },
+  {
+    "Place Name": "Kodaikanal",
+    "Description": "Kodaikanal is a hill station in Tamil Nadu, India. Known for its scenic beauty and serene atmosphere, it attracts tourists from all over the world. The town is surrounded by lush green forests and rolling hills, offering breathtaking views of the surrounding landscape. Visitors can explore the many attractions in Kodaikanal, including the Kodaikanal Lake, Coaker's Walk, and the Bryant Park, among others.",
+    "Ratings": 4.7,
+    "Category": "Hill Station",
+    "Location": "Tamil Nadu, India",
+    "Latitude": 10.238,
+    "Longitude": 77.4875,
+    "Hotels near the Place": [
+      {
+        "Name": "The Carlton, Kodaikanal",
+        "Distance to Place": "3.0 km",
+        "Latitude": 10.2386,
+        "Longitude": 77.4875
+      },
+      {
+        "Name": "The Kodai Resort",
+        "Distance to Place": "2.5 km",
+        "Latitude": 10.2372,
+        "Longitude": 77.4895
+      }
+    ]
+  },
+  {
+    "Place Name": "Rameshwaram",
+    "Description": "Rameshwaram is a holy city located in the Indian state of Tamil Nadu. It is considered one of the seven holiest places in India and is an important pilgrimage site for Hindus. The city is located on an island and is connected to the mainland by a bridge. Rameshwaram is famous for its temples, including the Ramanatha Swamy Temple and the Jadayu Theertham, as well as its beautiful beaches and scenic views.",
+    "Ratings": 4.8,
+    "Category": "Religious",
+    "Location": "Rameshwaram, Tamil Nadu, India",
+    "Latitude": 9.2855,
+    "Longitude": 79.3172,
+    "Hotels near the Place": [
+      {
+        "Name": "The Park Hotels Rameshwaram",
+        "Distance to Place": "2.0 km",
+        "Latitude": 9.2936,
+        "Longitude": 79.3136
+      },
+      {
+        "Name": "The Accord Rameshwaram",
+        "Distance to Place": "3.0 km",
+        "Latitude": 9.2979,
+        "Longitude": 79.3033
+      }
+    ]
+  },
+  {
+    "Place Name": "Madurai Meenakshi Amman Temple",
+    "Description": "The Madurai Meenakshi Amman Temple is a historic Hindu temple located in Madurai, Tamil Nadu, India. It is dedicated to the Hindu goddess Meenakshi and is one of the most visited tourist destinations in South India. The temple is known for its stunning architectural style, intricate carvings, and colorful paintings, which showcase the rich cultural heritage of the region. Visitors can explore the temple's many halls, shrines, and courtyards, and learn about the fascinating legends and traditions associated with the temple.",
+    "Ratings": 4.7,
+    "Category": "Temple",
+    "Location": "Madurai, Tamil Nadu, India",
+    "Latitude": 9.9253,
+    "Longitude": 78.1198,
+    "Hotels near the Place": [
+      {
+        "Name": "The Gateway Hotel Pasumalai Madurai",
+        "Distance to Place": "3.2 km",
+        "Latitude": 9.9153,
+        "Longitude": 78.1398
+      },
+      {
+        "Name": "The Madurai Residency",
+        "Distance to Place": "2.7 km",
+        "Latitude": 9.9353,
+        "Longitude": 78.1198
+      }
+    ]
+  },
+  {
+    "Place Name": "Yercaud",
+    "Description": "Yercaud is a hill station located in the Shevaroys range of Tamil Nadu, India. It is known for its scenic beauty, with rolling hills, lush forests, and tranquil lakes. Visitors can explore the various temples, parks, and gardens, such as the Shevaroy Temple, Lady's Seat, and the Botanical Garden. The hill station also offers many adventure activities, such as trekking, boating, and camping. Yercaud is a popular destination for those seeking a peaceful and rejuvenating getaway.",
+    "Ratings": 4.2,
+    "Category": "Hill Station",
+    "Location": "Tamil Nadu, India",
+    "Latitude": 11.7667,
+    "Longitude": 78.1333,
+    "Hotels near the Place": [
+      {
+        "Name": "Yercaud Green Valley Resorts",
+        "Distance to Place": "2.0 km",
+        "Latitude": 11.766,
+        "Longitude": 78.1319
+      },
+      {
+        "Name": "Grange Resorts Yercaud",
+        "Distance to Place": "3.5 km",
+        "Latitude": 11.7772,
+        "Longitude": 78.1311
+      }
+    ]
+  },
+  {
+    "Place Name": "Ooty",
+    "Description": "Ooty is a popular hill station located in the Nilgiri Hills of Tamil Nadu, India. Known for its picturesque scenery, Ooty is a popular tourist destination for its tea plantations, natural beauty, and colonial architecture. Visitors can take a stroll through the botanical gardens, visit the government museum, or go boating on the lake. Ooty is also a popular starting point for treks into the surrounding hills.",
+    "Ratings": 4.7,
+    "Category": "Hill Station",
+    "Location": "Nilgiri Hills, Tamil Nadu, India",
+    "Latitude": 11.4134,
+    "Longitude": 76.6961,
+    "Hotels near the Place": [
+      {
+        "Name": "Fern Hill Palace",
+        "Distance to Place": "2.5 km",
+        "Latitude": 11.4023,
+        "Longitude": 76.7051
+      },
+      {
+        "Name": "Sinclairs Retreat Ooty",
+        "Distance to Place": "3.0 km",
+        "Latitude": 11.4072,
+        "Longitude": 76.6961
+      }
+    ]
+  },
+  {
+    "Place Name": "Tiruchirappalli",
+    "Description": "Tiruchirappalli, also known as Trichy, is a city located in Tamil Nadu, India. It is known for its rich history, with a number of ancient temples and forts. Visitors can explore the Rock Fort Temple, the Sri Ranganathaswamy Temple, and the Jambukeswara Temple. Tiruchirappalli is also famous for its cuisine, with a variety of local dishes to try. The city is also a popular transportation hub, with easy access to other parts of Tamil Nadu.",
+    "Ratings": 4.3,
+    "Category": "City",
+    "Location": "Tamil Nadu, India",
+    "Latitude": 10.7905,
+    "Longitude": 78.7047,
+    "Hotels near the Place": [
+      {
+        "Name": "The Grand Gardenia",
+        "Distance to Place": "2.5 km",
+        "Latitude": 10.7901,
+        "Longitude": 78.7059
+      },
+      {
+        "Name": "Sarovar Portico",
+        "Distance to Place": "3.0 km",
+        "Latitude": 10.7898,
+        "Longitude": 78.7041
+      }
+    ]
+  },
+  {
+    "Place Name": "Kanyakumari",
+    "Description": "Kanyakumari is a coastal town located in the southernmost tip of India. It is known for its serene beaches, historic temples and iconic landmarks such as the Vivekananda Rock Memorial and the Thiruvalluvar Statue. The town is also renowned for its stunning sunrises and sunsets, where one can see the sun dip into the Arabian Sea and Bay of Bengal at the same time. In addition, Kanyakumari is rich in cultural heritage and has a strong influence of Indian mythology.",
+    "Ratings": 4.7,
+    "Category": "Beach",
+    "Location": "Kanyakumari, Tamil Nadu, India",
+    "Latitude": 8.0794,
+    "Longitude": 77.5499,
+    "Hotels near the Place": [
+      {
+        "Name": "Taj Fisherman's Cove Resort & Spa",
+        "Distance to Place": "7.0 km",
+        "Latitude": 8.274,
+        "Longitude": 77.7153
+      },
+      {
+        "Name": "The Leela Palace Kanyakumari",
+        "Distance to Place": "8.0 km",
+        "Latitude": 8.0862,
+        "Longitude": 77.5343
+      }
+    ]
   }
 ]
