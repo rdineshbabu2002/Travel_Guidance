@@ -22,3 +22,12 @@ Tour.insertMany(data, function (error, docs) {
   }
   mongoose.connection.close();
 });
+
+// Tour.deleteMany({}, function (error) {
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log("All records have been deleted from the collection.");
+//   }
+//   mongoose.connection.close();
+// });
