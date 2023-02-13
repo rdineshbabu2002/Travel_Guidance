@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Slide.scss";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Slide = () => {
+  const navigate = useNavigate()
   const [activeIndex, setActiveIndex] = useState(0);
   const [slides, setSlides] = useState([]);
   useEffect(() => {
@@ -24,6 +26,10 @@ const Slide = () => {
       prevIndex === 0 ? slides.length - 8 : prevIndex - 1
     );
   };
+  const handleNavigate=(e,title)=>{
+    e.preventDefault();
+    navigate(`/category/${title}`)
+  }
 
   return (
     <div id="slide" className="slide-container">
@@ -94,8 +100,8 @@ const Slide = () => {
         }}
       >
         {slides.map((slide) => (
-          <div key={slide._id} className="single-slide">
-            <img className="img" src={slide.image} alt={slide.title} />
+          <div key={slide._id} className="single-slide" role="button" onClick={(e)=>handleNavigate(e,slide.name)} >
+            <img className="img" src={slide.image} alt={slide.name} />
             <h3>{slide.name}</h3>
             {/* <p>{slide.description}</p> */}
           </div>

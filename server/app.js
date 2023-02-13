@@ -24,6 +24,17 @@ app.get('/api/v1/locations/:name',async(req,res)=>{
   res.status(200).json(tours)
 
 })
+app.get('/api/v1/place/:id',async(req,res)=>{
+  const {id}=req.params
+  const tour = await Tour.findById(id);
+  res.status(200).json(tour)
+})
+app.get('/api/v1/category/:category',async(req,res)=>{
+  const {category}=req.params
+  console.log(category)
+  const tours = await Tour.find({Category:category})
+  res.status(200).json(tours)
+})
 app.all("*", (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
