@@ -1,8 +1,14 @@
 import React from "react";
 import img from "../../assests/maps-pin-black-icon.png";
+import {useNavigate} from 'react-router-dom'
 function Card(props) {
+  const navigate = useNavigate()
+  const handleNavigate = (e)=>{
+    e.preventDefault();
+    navigate(`/locations/${props.name}`)
+  }
   return (
-    <div className="cardholder">
+    <div className="cardholder" role="button" onClick={handleNavigate}>
       <div class="bg-img">
         <img src={props.image_url} alt="img"></img>
       </div>
