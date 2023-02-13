@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Tour = require("../Model/Tour");
 const dotenv = require("dotenv");
-const data = require("./../data.json");
-
+const data = require("./../category.json");
+const Categories = require('../Model/Categories')
 dotenv.config({ path: "./../.env" });
 console.log(process.env.MONGO_URL);
 
@@ -14,7 +14,7 @@ db.once("open", function () {
   console.log("Connected to MongoDB Atlas");
 });
 
-Tour.insertMany(data, function (error, docs) {
+Categories.insertMany(data, function (error, docs) {
   if (error) {
     console.log(error);
   } else {
