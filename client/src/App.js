@@ -4,6 +4,7 @@ import Slide from "./Slide.jsx";
 import Home from "./Home";
 import Topdest from "./Topdest";
 import Payment from "./Payment";
+import Footer from "./Footer";
 const App = () => {
   return (
     <div id="app">
@@ -11,6 +12,7 @@ const App = () => {
       <Slide />
       <Topdest />
       <Payment />
+      <Footer />
     </div>
   );
 };
