@@ -13,14 +13,15 @@ const Detailed = () => {
   useEffect(() => {
     const getData = async () => {
       const { data } = await axios.get(
-        `http://localhost:8000/api/v1/locations/China`
+        `http://localhost:8000/api/v1/place/${id}`
       );
-      setplace(data[0]);
+      setplace(data);
     };
     getData();
   }, []);
+  console.log(place);
   if (place == null) return <p>Loading....</p>;
-  console.log(place["Hotels near the Place"]);
+  console.log(place);
 
   return (
     <div id="detailedinfo">
