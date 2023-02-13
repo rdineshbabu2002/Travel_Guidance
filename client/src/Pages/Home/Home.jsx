@@ -1,25 +1,16 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Home.scss";
 import Slide from "../../Components/Slide/Slide";
 import TopDest from "../../Components/TopDest/Topdest";
+import Navbar from "../../Components/Navbar/Navbar";
 const Home = () => {
   const [location, setlocation] = useState("");
   const handleSearch = async () => {};
   return (
     <div>
       <div id="homescreen">
-        <div className="navbar">
-          <div className="heading">Tour Trekker</div>
-
-          <ul class="navbarcontent">
-            <li className="navcontent1 underline-transition">Home</li>
-            <Link to="/about" className="navcontent underline-transition">
-              About Us
-            </Link>
-          </ul>
-        </div>
+        <Navbar />
         <div className="home">
           <div className="container">
             <p className="ultimate">The ultimate travel guide</p>
