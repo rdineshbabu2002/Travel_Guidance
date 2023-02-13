@@ -1,64 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Slide.scss";
-import img from "./assests/Lotus.jpg";
+import axios from "axios";
 
 const Slide = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const slides = [
-    {
-      title: "Slide 1",
-      description: "Description for Slide 1",
-      image: img,
-    },
-    {
-      title: "Slide 2",
-      description: "Description for Slide 2",
-      image: img,
-    },
-    {
-      title: "Slide 3",
-      description: "Description for Slide 3",
-      image: img,
-    },
-    {
-      title: "Slide 4",
-      description: "Description for Slide 1",
-      image: img,
-    },
-    {
-      title: "Slide 5",
-      description: "Description for Slide 2",
-      image: img,
-    },
-    {
-      title: "Slide 6",
-      description: "Description for Slide 3",
-      image: img,
-    },
-    {
-      title: "Slide 7",
-      description: "Description for Slide 1",
-      image: img,
-    },
-    {
-      title: "Slide 8",
-      description: "Description for Slide 2",
-      image: img,
-    },
-    {
-      title: "Slide 9",
-      description: "Description for Slide 3",
-      image: img,
-    },
-  ];
+  const [slides, setSlides] = useState([]);
+  useEffect(() => {
+    const getData = async () => {
+      const { data } = await axios.get(
+        "http://localhost:8000/api/v1/categories"
+      );
+      setSlides([...data]);
+    };
+    getData();
+  }, [slides]);
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % (slides.length - 6));
+    setActiveIndex((prevIndex) => (prevIndex + 1) % (slides.length - 8));
   };
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 6 : prevIndex - 1
+      prevIndex === 0 ? slides.length - 8 : prevIndex - 1
     );
   };
 
@@ -130,10 +93,10 @@ const Slide = () => {
           width: "33.3vw",
         }}
       >
-        {slides.map((slide, index) => (
-          <div key={index} className="single-slide">
+        {slides.map((slide) => (
+          <div key={slide._id} className="single-slide">
             <img className="img" src={slide.image} alt={slide.title} />
-            <h3>{slide.title}</h3>
+            <h3>{slide.name}</h3>
             {/* <p>{slide.description}</p> */}
           </div>
         ))}
