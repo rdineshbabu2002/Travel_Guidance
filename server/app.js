@@ -3,13 +3,13 @@ const cors = require("cors");
 const errorController = require("./controllers/errorController");
 const AppError = require("./utils/AppError");
 const Categories = require('./Model/Categories')
-const Tour =require('./Model/Tour.js')
+const Tour =require('./Model/Tour.js');
 const app = express();
 app.use(cors());
 app.options("*", cors());
-
-app.get("/api/v1/tours", (req, res) => {
-  res.status(200).json({ message: "Hello" });
+app.get("/api/v1/tours",async (req, res) => {
+  const tours = await Tour.find({})
+  res.status(200).json(tours.splice(0,9))
 });
 app.get('/api/v1/categories',async(req,res)=>{
   const datas = await Categories.find({});
