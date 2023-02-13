@@ -68,17 +68,17 @@ const Home = () => {
             <input
               className="datecontain"
               type={"date"}
-              style={{ maxWidth: "100px", border: "none" }}
+              style={{ border: "none" }}
             />
           </div>
-          <div>
+          <div className="search">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 icon-name "
             >
               <path
                 strokeLinecap="round"

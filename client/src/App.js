@@ -3,12 +3,14 @@ import "./App.scss";
 import Slide from "./Slide.jsx";
 import Home from "./Home";
 import Topdest from "./Topdest";
+import Payment from "./Payment";
 const App = () => {
   return (
     <div id="app">
       <Home />
       <Slide />
       <Topdest />
+      <Payment />
     </div>
   );
 };

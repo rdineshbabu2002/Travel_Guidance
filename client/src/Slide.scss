@@ -60,6 +60,10 @@
   background-color: #f4edf7;
   width: 50px;
 }
+.btn-icon::hover {
+  color: white;
+  background-color: black;
+}
 .btn svg::hover {
   background-color: black;
   color: white;
