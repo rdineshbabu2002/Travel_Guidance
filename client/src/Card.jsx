@@ -3,7 +3,9 @@ import img from "./assests/maps-pin-black-icon.png";
 function Card(props) {
   return (
     <div className="cardholder">
-      <div class="bg-img"></div>
+      <div class="bg-img">
+        <img src={props.image_url} alt="img"></img>
+      </div>
       <p className="place">{props.name}</p>
       <p className="description">{props.desc}</p>
       <p className="location">

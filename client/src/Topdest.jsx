@@ -1,7 +1,7 @@
 import React from "react";
 import "./Topdest.scss";
 import Card from "./Card";
-import Data from "./carddata.json";
+import Data from "./tncards.json";
 function Topdest() {
   return (
     <div>
@@ -17,9 +17,10 @@ function Topdest() {
             return (
               <Card
                 key={index}
-                name={data["Place Name"]}
-                desc={data.Description}
-                loc={data.Location}
+                name={data.place_name}
+                desc={data.description}
+                loc={data.location}
+                image_url={data.image_url}
               />
             );
           })}

@@ -9,19 +9,20 @@
   font-weight: normal;
   color: dimgray;
 }
-.bg-img {
+.bg-img img {
   width: 300px;
   height: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3%;
-  background-image: url("https://imageio.forbes.com/specials-images/dam/imageserve/1171238184/960x0.jpg?format=jpg&width=960");
-  background-size: cover;
+}
+.card-container-1 {
+  padding-top: 30px;
 }
 .cardholder {
   margin: 0 auto;
   padding: 10px 10px 10px;
   width: 300px;
-  height: 350px;
+  height: 380px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3%;
 }
@@ -38,9 +39,11 @@
   gap: 20px;
 }
 .location {
+  position: relative;
   font-size: small;
   padding: auto;
   padding-bottom: 5px;
+  padding-top: 10px;
 }
 .location img {
   width: 15px;
