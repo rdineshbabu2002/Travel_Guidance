@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./assests/maps-pin-black-icon.png";
+import img from "../../assests/maps-pin-black-icon.png";
 function Card(props) {
   return (
     <div className="cardholder">

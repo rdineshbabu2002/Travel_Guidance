@@ -1,7 +1,7 @@
 import React from "react";
 import "./Topdest.scss";
-import Card from "./Card";
-import Data from "./tncards.json";
+import Card from "../TnCard/Card";
+import Data from "../TnCard/tncards.json";
 function Topdest() {
   return (
     <div>

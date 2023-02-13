@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Tour = require("../Model/Tour");
 const dotenv = require("dotenv");
 const data = require("./../category.json");
-const Categories = require('../Model/Categories')
+const Categories = require("../Model/Categories");
 dotenv.config({ path: "./../.env" });
 console.log(process.env.MONGO_URL);
 
