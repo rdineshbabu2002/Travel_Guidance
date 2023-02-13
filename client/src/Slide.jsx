@@ -53,17 +53,17 @@ const Slide = () => {
   ];
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % (slides.length - 4));
+    setActiveIndex((prevIndex) => (prevIndex + 1) % (slides.length - 6));
   };
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 5 : prevIndex - 1
+      prevIndex === 0 ? slides.length - 6 : prevIndex - 1
     );
   };
 
   return (
-    <div className="slide-container">
+    <div id="slide" className="slide-container">
       <div className="category">
         <div className="cato">
           <div className="head">Categories</div>

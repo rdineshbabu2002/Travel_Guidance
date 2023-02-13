@@ -55,11 +55,54 @@
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
+    transition: 500ms;
   }
   .navcontent1 {
     font-family: Lato;
     font-size: 24px;
-    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: 2s;
+  }
+  .icon-name {
+    height: 20px;
+    width: 20px;
+  }
+  .navcontent1:hover {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .underline-transition {
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+
+  .underline-transition:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .underline-transition:hover:after {
+    width: 100%;
+  }
+  .navcontent:hover {
+    font-family: Lato;
+    font-size: 24px;
+    // font-weight: 600;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
@@ -105,10 +148,45 @@
     margin: 0 auto;
     width: 50%;
     font-family: lato;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .local,
+  .datecont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .inputtext {
+    width: 200px;
+    outline: none;
+    border: none;
+
+    padding: 1rem 0.5rem;
+  }
+  .inputtext:focus,
+  .inputtext:active {
+    border: none;
   }
   .date {
     border-left: 1px solid black;
     margin: 0 auto;
     width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .datecontain {
+    padding: 1rem 0.5rem;
+    width: 120px;
+  }
+  .search {
+    padding-right: 20px;
   }
 }
