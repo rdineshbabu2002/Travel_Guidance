@@ -7,18 +7,18 @@ const Navbar = () => {
       <div className="navbar">
         <div className="heading">Tour Trekker</div>
 
-        <ul class="navbarcontent">
+        <ul className="navbarcontent">
           <NavLink
             to="/"
             className="navcontent  underline-transition"
-            activeClassName="active"
+            activeclassname="active"
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
             className="navcontent  underline-transition"
-            activeClassName="active"
+            activeclassname="active"
           >
             About Us
           </NavLink>

@@ -5,9 +5,14 @@ import Footer from "../../Components/Footer/Footer";
 import Slide from "../../Components/Slide/Slide";
 import TopDest from "../../Components/TopDest/Topdest";
 import Navbar from "../../Components/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [location, setlocation] = useState("");
-  const handleSearch = async () => {};
+  const navigate = useNavigate()
+  const handleSearch = async (e) => {
+      e.preventDefault()
+      navigate(`/locations/${location}`)
+  };
   return (
     <div>
       <div id="homescreen">
@@ -19,7 +24,7 @@ const Home = () => {
           </div>
           <div className="tophead">
             <div className="location">
-              <div class="local">
+              <div className="local">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
