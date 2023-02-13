@@ -4,6 +4,7 @@ import About from "./Pages/About/About";
 import Locations from "./Pages/Locations/Locations";
 import Detailed from "./Pages/Detailed/Detailed";
 import Payment from "./Components/Payment/Payment";
+import Category from "./Pages/Category/Category";
 const AllRoutes = () => {
   return (
     <Routes>
@@ -12,6 +13,7 @@ const AllRoutes = () => {
       <Route path="/locations/:name" element={<Locations />} />
       <Route path="/payment" element={<Payment />} />
       <Route path="/Detailed/:id" element={<Detailed />} />
+      <Route path="/Category/:name" element ={<Category />} />
     </Routes>
   );
 };

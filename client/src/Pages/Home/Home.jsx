@@ -23,7 +23,7 @@ const Home = () => {
           </div>
           <div className="tophead">
             <div className="location">
-              <div class="local">
+              <div className="local">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

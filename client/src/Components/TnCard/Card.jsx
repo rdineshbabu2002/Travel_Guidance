@@ -5,7 +5,7 @@ function Card(props) {
   const navigate = useNavigate();
   const handleNavigate = (e) => {
     e.preventDefault();
-    navigate(`/Detailed/${props.name}`);
+    navigate(`/Detailed/${props.id}`);
   };
   return (
     <div className="cardholder" role="button" onClick={handleNavigate}>
@@ -20,4 +20,8 @@ function Card(props) {
     </div>
   );
 }
+Card.defaultProps={
+  image_url:"https://images.unsplash.com/photo-1542224566-6e85f2e6772f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdW50YWluc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+}
 export default Card;
+
