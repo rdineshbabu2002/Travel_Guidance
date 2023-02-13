@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Home.scss";
+import Footer from "../../Components/Footer/Footer";
 import Slide from "../../Components/Slide/Slide";
 import TopDest from "../../Components/TopDest/Topdest";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -94,6 +95,7 @@ const Home = () => {
       </div>
       <Slide />
       <TopDest />
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,22 @@
+.footer-main {
+  display: flex;
+  justify-content: center;
+}
+.comp-1 {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  width: 150px;
+  flex-direction: column;
+  h1 {
+    font-size: medium;
+    padding: 10px 0px;
+  }
+  p {
+    color: dimgrey;
+  }
+  .fb {
+    padding: 10px 0px;
+  }
+}
