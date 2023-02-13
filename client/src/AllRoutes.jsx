@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Slide from "./Components/Slide/Slide";
-import About from "./Components/About/About";
+import About from "./Pages/About/About";
 const AllRoutes = () => {
   return (
     <Routes>

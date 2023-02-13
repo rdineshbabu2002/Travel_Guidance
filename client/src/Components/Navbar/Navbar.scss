@@ -30,32 +30,19 @@
   }
   .navcontent {
     font-family: Lato;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
     transition: 500ms;
   }
-  .navcontent1 {
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-    transition: 2s;
-  }
+
   .icon-name {
     height: 20px;
     width: 20px;
   }
-  .navcontent1:hover {
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
+
   .underline-transition {
     display: inline-block;
     position: relative;
@@ -86,5 +73,8 @@
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
+  }
+  .active {
+    font-weight: bold;
   }
 }
