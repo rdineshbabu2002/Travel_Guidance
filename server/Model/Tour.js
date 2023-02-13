@@ -12,6 +12,7 @@ const tourSchema = new mongoose.Schema({
     required: [true, "Provide the description "],
     trim: true,
   },
+  Category:String,
   Ratings: {
     type: Number,
     default: 4.5,
