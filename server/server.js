@@ -14,6 +14,7 @@ dotenv.config();
 const app = require("./app");
 const Categories = require("./Model/Categories");
 
+console.log(process.env.MONGO_URL);
 mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.MONGO_URL)
