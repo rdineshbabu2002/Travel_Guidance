@@ -8,10 +8,10 @@ import Navbar from "../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [location, setlocation] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const handleSearch = async (e) => {
-      e.preventDefault()
-      navigate(`/locations/${location}`)
+    e.preventDefault();
+    navigate(`/locations/${location}`);
   };
   return (
     <div>
@@ -44,7 +44,7 @@ const Home = () => {
                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                   />
                 </svg>
-                <p>Location</p>
+                <p className="location">Location</p>
               </div>
               <input
                 className="inputtext"

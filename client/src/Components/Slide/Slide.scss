@@ -12,6 +12,9 @@
   font-size: 46px;
   font-weight: bolder;
 }
+.btn {
+  cursor: pointer;
+}
 .content {
   font-size: 18px;
 }
@@ -48,6 +51,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
 }
 .img {
   height: 200px;

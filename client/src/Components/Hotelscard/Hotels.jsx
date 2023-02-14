@@ -6,7 +6,7 @@ const Hotels = (props) => {
     <div id="hotelContainer">
       <img className="hotelimage" src={img} alt="img" />
       <h1 className="hotelName">{props.name}</h1>
-      <p className="distance">Distance : {props.distance}</p>
+      <p className="distance">Distance : {props.distance} </p>
       <p className="rating"> Rating : {props.rating} ⭐</p>
     </div>
   );

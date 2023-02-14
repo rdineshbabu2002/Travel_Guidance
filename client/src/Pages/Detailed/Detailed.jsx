@@ -17,9 +17,8 @@ const Detailed = () => {
     };
     getData();
   }, []);
-  
-  if (place == null) return <p>Loading....</p>;
 
+  if (place == null) return <p>Loading....</p>;
 
   return (
     <div id="detailedinfo">
@@ -32,19 +31,19 @@ const Detailed = () => {
         <CustomMap lat={place?.Latitude} lng={place?.Longitude} />
         <h1 className="titlehead">Hotels Nearby </h1>
         <div className="hotellist">
-          {place["Hotels near the Place"].map((hotel,idx) => {
+          {place["Hotels near the Place"].map((hotel, idx) => {
             return (
               <Hotels
                 name={hotel["Hotel Name"]}
                 distance={hotel["Distance to Place"]}
                 rating={5}
-              key={idx}
+                key={idx}
               />
             );
           })}
         </div>
         <h1 className="titlehead" style={{ paddingBottom: "32px" }}>
-          For Taxi and More Assistance Upgrade to Premium ❤️‍🔥➡️
+          For Taxi and More Assistance Upgrade to Premium 🔥➡️
         </h1>
       </div>
     </div>

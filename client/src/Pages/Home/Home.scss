@@ -38,6 +38,12 @@
     text-align: center;
     gap: 12px;
   }
+  .search {
+    cursor: pointer;
+  }
+  .location {
+    font-size: 24px;
+  }
   .ultimate {
     font-family: Lato;
     font-size: 36px;
@@ -77,10 +83,10 @@
     gap: 12px;
   }
   .inputtext {
-    width: 200px;
+    width: 250px;
     outline: none;
     border: none;
-
+    font-size: 18px;
     padding: 1rem 0.5rem;
   }
   .inputtext:focus,

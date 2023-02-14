@@ -28,6 +28,9 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3%;
 }
+.cardholder:hover {
+  cursor: pointer;
+}
 .place {
   padding-top: 5px;
   padding-bottom: 5px;
