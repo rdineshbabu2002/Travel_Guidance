@@ -7,7 +7,7 @@ const Category = () => {
     const [places,setPlaces]=useState([])
     useEffect(()=>{
         const getData = async()=>{
-            const {data}=await axios.get(`http://localhost:8000/api/v1/category/${name}`);
+            const {data}=await axios.get(`/category/${name}`);
             setPlaces([...data])
         }
         getData()

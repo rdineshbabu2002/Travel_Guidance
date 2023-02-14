@@ -8,9 +8,7 @@ const Detailed = () => {
   const [place, setplace] = useState(null);
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(
-        `http://localhost:8000/api/v1/place/${id}`
-      );
+      const { data } = await axios.get(`/place/${id}`);
       setplace(data);
     };
     getData();

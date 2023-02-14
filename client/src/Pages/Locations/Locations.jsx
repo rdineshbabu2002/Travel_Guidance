@@ -8,9 +8,7 @@ const Locations = () => {
   const [places, setPlaces] = useState([]);
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(
-        `http://localhost:8000/api/v1/locations/${name}`
-      );
+      const { data } = await axios.get(`/locations/${name}`)
       setPlaces([...data]);
     };
     getData();
