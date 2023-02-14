@@ -39,6 +39,7 @@ const Locations = () => {
                       desc={place.Description}
                       loc={place.Location}
                       image_url={place.image_url}
+                      id={data._id}
                     />
                   );
                 })}
