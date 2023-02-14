@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Detailed.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import img from "../../assests/Lotus.jpg";
-import SimpleMap from "../../Components/SimpleMap/SimpleMap";
+import CustomMap from "../../Components/CustomMap/CustomMap";
 import Hotels from "../../Components/Hotelscard/Hotels";
 const Detailed = () => {
   const { id } = useParams();
@@ -17,9 +17,9 @@ const Detailed = () => {
     };
     getData();
   }, []);
-  console.log(place);
+  
   if (place == null) return <p>Loading....</p>;
-  console.log(place);
+
 
   return (
     <div id="detailedinfo">
@@ -29,15 +29,16 @@ const Detailed = () => {
         <img className="imgdetail" src={img} alt="img" />
         <p className="description">{place.Description}</p>
         <h1 className="titlehead"> G-Map Location</h1>
-        <SimpleMap />
+        <CustomMap lat={place?.Latitude} lng={place?.Longitude} />
         <h1 className="titlehead">Hotels Nearby </h1>
         <div className="hotellist">
-          {place["Hotels near the Place"].map((hotel) => {
+          {place["Hotels near the Place"].map((hotel,idx) => {
             return (
               <Hotels
                 name={hotel["Hotel Name"]}
                 distance={hotel["Distance to Place"]}
                 rating={5}
+              key={idx}
               />
             );
           })}

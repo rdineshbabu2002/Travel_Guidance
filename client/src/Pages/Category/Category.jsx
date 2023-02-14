@@ -13,13 +13,13 @@ const Category = () => {
         }
         getData()
     },[])
-    console.log(places)
+    console.log("Hi")
+    // console.log(places)
   return (
     <div id="category">
       <div>
         <Navbar />
-        {places.map((place, index) => {
-          return (
+
             <div>
               <h1 className="head">
                 Top Destinations of{" "}
@@ -27,13 +27,13 @@ const Category = () => {
                 Categories
               </h1>
               <p className="para">
-                {" "}
+
                 Much places suits your mood.Explore somewhere interesting
                 <br /> and enjoy the vibes!
               </p>
               <div className="card-container-1">
                 <div className="cards">
-                  {places.map((data, index) => {
+                  {places.map((place, index) => {
                     return (
                       <Card
                         key={index}
@@ -48,8 +48,7 @@ const Category = () => {
                 </div>
               </div>
             </div>
-          );
-        })}
+          
       </div>
     </div>
   );
