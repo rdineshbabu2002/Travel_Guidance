@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Slide = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(0);
   const [slides, setSlides] = useState([]);
   useEffect(() => {
@@ -26,10 +26,10 @@ const Slide = () => {
       prevIndex === 0 ? slides.length - 8 : prevIndex - 1
     );
   };
-  const handleNavigate=(e,title)=>{
+  const handleNavigate = (e, title) => {
     e.preventDefault();
-    navigate(`/category/${title}`)
-  }
+    navigate(`/category/${title}`);
+  };
 
   return (
     <div id="slide" className="slide-container">
@@ -74,22 +74,6 @@ const Slide = () => {
               />
             </svg>
           </button>
-          {/* <button onClick={handleNext}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </button> */}
         </div>
       </div>
       <div
@@ -100,10 +84,14 @@ const Slide = () => {
         }}
       >
         {slides.map((slide) => (
-          <div key={slide._id} className="single-slide" role="button" onClick={(e)=>handleNavigate(e,slide.name)} >
+          <div
+            key={slide._id}
+            className="single-slide"
+            role="button"
+            onClick={(e) => handleNavigate(e, slide.name)}
+          >
             <img className="img" src={slide.image} alt={slide.name} />
             <h3>{slide.name}</h3>
-            {/* <p>{slide.description}</p> */}
           </div>
         ))}
       </div>
