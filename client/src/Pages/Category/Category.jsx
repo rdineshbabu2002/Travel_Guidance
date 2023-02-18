@@ -40,7 +40,7 @@ const Category = () => {
                     name={place["Place Name"]}
                     desc={place.Description}
                     loc={place.Location}
-                    image_url={place.image_url}
+                    image_url={place.Image}
                     id={place._id}
                   />
                 );
