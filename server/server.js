@@ -1,7 +1,5 @@
-
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-
 
 process.on("uncaughtException", (err) => {
   console.log("Uncaught exception 💥 , Shutting down");
@@ -14,17 +12,12 @@ dotenv.config();
 const app = require("./app");
 const Categories = require("./Model/Categories");
 
-console.log(process.env.MONGO_URL);
+// console.log(process.env.MONGO_URL);
 mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => console.log("DB Connection Successful"))
   .catch((err) => console.log(err));
-
-
-
-
-  
 
 const port = process.env.PORT || 8000;
 
