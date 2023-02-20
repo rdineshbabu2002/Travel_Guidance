@@ -13,6 +13,7 @@ app.get("/api/v1/tours", async (req, res) => {
 });
 app.get("/api/v1/categories", async (req, res) => {
   const datas = await Categories.find({});
+  console.log(datas);
   res.status(200).json(datas);
 });
 
